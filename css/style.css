@@ -1,12 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 body {
-  background-image: url("https://marirabello.com.br/wp-content/uploads/2018/09/Simple-Blue-Background.jpg");
+  background-image: url("../img/fundo.jpg");
   background-size: auto 100vh;
   font-family: Arial;
   height: 100vh;
+  font-size: 12px;
+}
+
+@media (min-width: 400px) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu {
   background-color: white;
+  position: fixed;
+  width: 100vw;
+  top: 0;
 }
 
 .menu ul {
@@ -18,12 +55,9 @@ body {
   list-style: none;
 }
 
-a {
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
+.menu a {
+  display: block;
+  padding: 10px 20px;
 }
 
 .site-subtitle,
@@ -34,4 +68,9 @@ a:hover {
 
 .site-subtitle {
   font-style: italic;
+}
+
+.img-portfolio {
+  height: 180px;
+  width: 180px;
 }
