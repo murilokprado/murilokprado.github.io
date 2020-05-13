@@ -6,6 +6,7 @@
 
 a {
   text-decoration: none;
+  color: whitesmoke;
 }
 
 a:hover {
@@ -13,34 +14,30 @@ a:hover {
 }
 
 body {
-  background-image: url("../img/fundo.jpg");
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), #222222),
+    url(../img/background.jpg);
+  background-position: 30% 0;
+  background-repeat: repeat, no-repeat;
   background-size: auto 100vh;
-  font-family: Arial;
+  font-family: "Source Code Pro", monospace;
   height: 100vh;
   font-size: 12px;
 }
 
 @media (min-width: 400px) {
   body {
-    font-size: 14px;
-  }
-}
-
-@media (min-width: 600px) {
-  body {
-    font-size: 18px;
+    font-size: 11px;
   }
 }
 
 header {
-  height: 100vh;
+  height: 99vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .menu {
-  background-color: white;
   position: fixed;
   width: 100vw;
   top: 0;
@@ -66,11 +63,71 @@ header {
   text-align: center;
 }
 
+.site-title {
+  font-family: "Bungee Shade", cursive;
+  font-size: 3em;
+}
+
 .site-subtitle {
-  font-style: italic;
+  font-family: "Press Start 2P", cursive;
+  font-size: 0.8em;
+  line-height: 2em;
 }
 
 .img-portfolio {
   height: 180px;
-  width: 180px;
+  width: 240px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.portfolio {
+  background-color: #222222;
+  padding: 2em;
+  height: 80vh;
+}
+
+.portfolio h2 {
+  font-family: "Press Start 2P", cursive;
+  color: whitesmoke;
+  margin-bottom: 2em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.portfolio .grid {
+  display: grid;
+  gap: 2em;
+}
+
+@media (max-width: 560px) {
+  .portfolio {
+    height: 145vh;
+  }
+}
+
+@media (min-width: 560px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(2, 240px);
+  }
+}
+
+@media (min-width: 880px) {
+  .portfolio .grid {
+    grid-template-columns: repeat(3, 240px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh -8em -48px);
+  }
+}
+
+@media (min-width: 1200px) {
+  .img-portfolio {
+    height: 180px;
+    width: auto;
+  }
+}
+
+.portfolio figure {
+  text-align: center;
 }
