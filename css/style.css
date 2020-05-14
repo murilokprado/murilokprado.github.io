@@ -16,9 +16,10 @@ a:hover {
 body {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), #222222),
     url(../img/background.jpg);
-  background-position: 30% 0;
+  background-position: center;
   background-repeat: repeat, no-repeat;
   background-size: auto 100vh;
+  object-fit: cover;
   font-family: "Source Code Pro", monospace;
   height: 100vh;
   font-size: 12px;
@@ -81,12 +82,14 @@ header {
   border-radius: 50%;
 }
 
+.contato,
 .portfolio {
   background-color: #222222;
   padding: 2em;
-  height: 80vh;
+  min-height: 100vh;
 }
 
+.contato h2,
 .portfolio h2 {
   font-family: "Press Start 2P", cursive;
   color: whitesmoke;
@@ -95,19 +98,29 @@ header {
   text-align: center;
 }
 
-.portfolio .grid {
+.grid {
   display: grid;
   gap: 2em;
+  margin-top: 5vh;
 }
 
 @media (max-width: 560px) {
   .portfolio {
     height: 145vh;
   }
+  body {
+    background-size: auto 100vh;
+  }
 }
 
 @media (min-width: 560px) {
   .portfolio .grid {
+    grid-template-columns: repeat(2, 240px);
+    align-content: center;
+    justify-content: center;
+  }
+
+  .contato .icons {
     grid-template-columns: repeat(2, 240px);
   }
 }
@@ -126,8 +139,27 @@ header {
     height: 180px;
     width: auto;
   }
+
+  .contato .icons {
+    grid-template-columns: repeat(4, 240px);
+    height: calc(100vh -8em -48px);
+  }
 }
 
 .portfolio figure {
   text-align: center;
+}
+
+.contato a {
+  color: whitesmoke;
+  font-size: 8em;
+  text-align: center;
+}
+
+.contato a:hover {
+  text-decoration: none;
+}
+
+.contato .icons {
+  justify-content: center;
 }
