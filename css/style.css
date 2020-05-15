@@ -208,7 +208,7 @@ header {
   justify-content: center;
   background: rgba(24, 24, 24, 1);
   border-radius: 5px 5px 5px 5px;
-  box-shadow: 5px 9px 10px #000000;
+  box-shadow: 5px 9px 10px;
   width: auto;
   height: 63vh;
 }
@@ -229,9 +229,9 @@ header {
   }
 }
 
-@media (min-width: 560px) {
+@media (min-height: 560px) {
   .terminal {
-    min-height: 85vh;
+    min-height: 213vh;
   }
   .component {
     height: 4.5vh;
@@ -247,7 +247,7 @@ header {
   }
 }
 
-@media (min-height: 820px) {
+@media (min-height: 800px) {
   .terminal {
     min-height: 120vh;
   }
