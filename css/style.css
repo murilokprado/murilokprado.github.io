@@ -149,28 +149,10 @@ header {
 }
 
 @media (min-width: 880px) {
-  .portfolio .grid {
-    grid-template-columns: repeat(2, 240px);
-    align-content: center;
-    justify-content: center;
-    height: calc(100vh -8em -48px);
-  }
 }
 
-@media (min-width: 1200px) {
-  body {
-    background-size: 100vw 100vh;
-  }
-
-  .img-portfolio {
-    height: 150px;
-    width: 220px;
-  }
-
-  .contato .icons {
-    grid-template-columns: repeat(4, 240px);
-    height: calc(100vh -8em -48px);
-  }
+figcaption {
+  color: whitesmoke;
 }
 
 .portfolio figure {
@@ -220,62 +202,120 @@ header {
   height: 4vh;
 }
 
-@media (min-height: 480px) {
+@media (min-width: 320px) {
   .terminal {
-    min-height: 145vh;
+    min-height: 211vh;
   }
   .component {
-    height: 3.5vh;
+    height: 3.3vh;
   }
 }
 
-@media (min-height: 560px) {
+@media (min-width: 375px) {
   .terminal {
-    min-height: 213vh;
-  }
-  .component {
-    height: 4vh;
-  }
-}
-
-@media (min-height: 660px) {
-  .terminal {
-    min-height: 147vh;
+    min-height: 148vh;
   }
   .component {
     height: 3vh;
   }
 }
 
-@media (min-height: 760px) {
+@media (min-width: 410px) {
   .terminal {
-    min-height: 40vh;
-    height: 40vh;
+    min-height: 98vh;
   }
   .component {
-    height: 3vh;
-  }
-  .sobre {
-    min-height: 50vh;
+    height: 2.8vh;
   }
 }
 
 @media (min-height: 800px) {
   .terminal {
-    min-height: 121vh;
+    min-height: 120vh;
   }
   .component {
-    height: 3vh;
+    height: 2.5vh;
+  }
+  .portfolio .grid {
+    grid-template-columns: repeat(2, 240px);
+    align-content: center;
+    justify-content: center;
+    height: calc(100vh -8em -48px);
+  }
+}
+
+@media (min-width: 680px) {
+  .terminal {
+    min-height: 38vh;
+    height: 38vh;
+  }
+  .sobre {
+    height: 50vh;
+    min-height: 50vh;
+  }
+  .component {
+    height: 2vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .terminal {
+    min-height: 21vh;
+    height: 21vh;
+  }
+  .sobre {
+    height: 30vh;
+    min-height: 30vh;
+  }
+  .component {
+    height: 1.4vh;
+  }
+  .contato {
+    min-height: 30vh;
+    height: 30vh;
   }
 }
 
 @media (min-width: 1200px) {
+  body {
+    background-size: 100vw 100vh;
+  }
+  .img-portfolio {
+    height: 150px;
+    width: 220px;
+  }
+  .contato .icons {
+    grid-template-columns: repeat(4, 240px);
+    height: calc(100vh -8em -48px);
+  }  
   .terminal {
-    min-height: 36vh;
-    height: 36vh;
+    height: 38vh;
   }
   .component {
     height: 3vh;
+  }
+  .sobre {
+    height: 60vh;
+  }
+  .contato {
+    min-height: 40vh;
+    height: 40vh;
+  }
+}
+
+@media (min-width: 1800px) {
+  .terminal {
+    height: 23vh;
+  }
+  .component {
+    height: 3vh;
+  }
+  .sobre {
+    height: 40vh;
+  }
+  .contato {
+    min-height: 30vh;
+    height: 30vh;
   }
 }
 
