@@ -14,6 +14,7 @@ a:hover {
 }
 
 body {
+  background-color: #222222;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), #222222),
     url(../img/background.jpg);
   background-position: center;
@@ -39,9 +40,11 @@ header {
 }
 
 .menu {
+  background-color: #222222;
   position: fixed;
   width: 100vw;
   top: 0;
+  z-index: 1;
 }
 
 .menu ul {
@@ -54,8 +57,31 @@ header {
 }
 
 .menu a {
+  font-size: 1.2em;
   display: block;
   padding: 10px 20px;
+  transition: text-shadow 0.5s;
+}
+
+.menu a:active,
+.menu a:hover {
+  text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.titulo {
+  animation: linear 1.2s animacaoTitulo forwards;
+}
+
+@keyframes animacaoTitulo {
+  from {
+    transform: scale(0.2) translateY(40vh);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1) translateY(0);
+    opacity: 1;
+  }
 }
 
 .site-subtitle,
@@ -79,15 +105,17 @@ header {
   height: 180px;
   width: 240px;
   object-fit: cover;
-  border-radius: 50%;
+  border-radius: 2%;
 }
 
+.sobre,
 .contato,
 .portfolio {
   background-color: #222222;
   padding: 2em;
 }
 
+.sobre h2,
 .contato h2,
 .portfolio h2 {
   font-family: "Press Start 2P", cursive;
@@ -100,7 +128,6 @@ header {
 .grid {
   display: grid;
   gap: 2em;
-  margin-top: 5vh;
 }
 
 @media (max-width: 560px) {
@@ -123,7 +150,7 @@ header {
 
 @media (min-width: 880px) {
   .portfolio .grid {
-    grid-template-columns: repeat(3, 240px);
+    grid-template-columns: repeat(2, 240px);
     align-content: center;
     justify-content: center;
     height: calc(100vh -8em -48px);
@@ -136,8 +163,8 @@ header {
   }
 
   .img-portfolio {
-    height: 180px;
-    width: auto;
+    height: 150px;
+    width: 220px;
   }
 
   .contato .icons {
@@ -158,12 +185,122 @@ header {
   color: whitesmoke;
   font-size: 8em;
   text-align: center;
+  transition: text-shadow 0.5s;
 }
 
+.contato a:active,
 .contato a:hover {
   text-decoration: none;
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
 .contato .icons {
   justify-content: center;
+}
+
+.sobre {
+  width: auto;
+  min-height: 70vh;
+}
+
+.terminal {
+  align-items: center;
+  justify-content: center;
+  background: rgba(24, 24, 24, 1);
+  border-radius: 5px 5px 5px 5px;
+  width: auto;
+  height: 63vh;
+}
+
+.component {
+  background: linear-gradient(180deg, rgba(52, 56, 59, 1.2), #222222);
+  border-radius: 5px 5px 0px 0px;
+  width: auto;
+  height: 4vh;
+}
+
+@media (min-width: 560px) {
+  .terminal {
+    min-height: 85vh;
+  }
+  .component {
+    height: 4.5vh;
+  }
+}
+
+@media (min-height: 480px) {
+  .terminal {
+    min-height: 210vh;
+  }
+  .component {
+    height: 3.5vh;
+  }
+}
+
+@media (min-height: 570px) {
+  .terminal {
+    min-height: 145vh;
+  }
+  .component {
+    height: 3vh;
+  }
+}
+
+@media (min-height: 690px) {
+  .terminal {
+    min-height: 100vh;
+  }
+  .component {
+    height: 3vh;
+  }
+}
+
+@media (min-height: 800px) {
+  .terminal {
+    min-height: 120vh;
+  }
+  .component {
+    height: 3vh;
+  }
+}
+
+@media (min-width: 1200px) {
+  .terminal {
+    min-height: 36vh;
+    height: 36vh;
+  }
+  .component {
+    height: 3vh;
+  }
+}
+.component i:active,
+.component i:hover {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.component .close {
+  margin: 4px 0px 0px 7px;
+  color: #f8585a;
+}
+
+.component .minimize {
+  color: #dec71c;
+}
+
+.component .option {
+  color: #56c432;
+}
+
+.curriculum {
+  color: whitesmoke;
+  padding: 0px 5px 5px 5px;
+  font-size: 1.1em;
+}
+
+.curriculum p {
+  margin-top: 5px;
+}
+
+.curriculum b {
+  color: white;
 }
