@@ -236,12 +236,6 @@ figcaption {
   .component {
     height: 2.5vh;
   }
-  .portfolio .grid {
-    grid-template-columns: repeat(2, 240px);
-    align-content: center;
-    justify-content: center;
-    height: calc(100vh -8em -48px);
-  }
 }
 
 @media (min-width: 680px) {
@@ -258,7 +252,7 @@ figcaption {
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1023px) {
   .terminal {
     min-height: 21vh;
     height: 21vh;
@@ -289,13 +283,16 @@ figcaption {
     height: calc(100vh -8em -48px);
   }  
   .terminal {
-    height: 38vh;
+    height: 47vh;
+    width: 70vw;
+    margin-right: auto;
+    margin-left: auto; 
   }
   .component {
     height: 3vh;
   }
   .sobre {
-    height: 60vh;
+    height: 65vh;
   }
   .contato {
     min-height: 40vh;
@@ -305,13 +302,17 @@ figcaption {
 
 @media (min-width: 1800px) {
   .terminal {
-    height: 23vh;
+    height: 32vh;
+    width: 50vw;
+    margin-right: auto;
+    margin-left: auto; 
   }
   .component {
-    height: 3vh;
+    height: 2.2vh;
   }
   .sobre {
-    height: 40vh;
+    height: 42vh;
+    width: none;
   }
   .contato {
     min-height: 30vh;
