@@ -234,22 +234,35 @@ header {
     min-height: 213vh;
   }
   .component {
-    height: 4.5vh;
+    height: 4vh;
   }
 }
 
-@media (min-height: 690px) {
+@media (min-height: 660px) {
   .terminal {
-    min-height: 100vh;
+    min-height: 147vh;
   }
   .component {
     height: 3vh;
   }
 }
 
+@media (min-height: 760px) {
+  .terminal {
+    min-height: 40vh;
+    height: 40vh;
+  }
+  .component {
+    height: 3vh;
+  }
+  .sobre {
+    min-height: 50vh;
+  }
+}
+
 @media (min-height: 800px) {
   .terminal {
-    min-height: 120vh;
+    min-height: 121vh;
   }
   .component {
     height: 3vh;
@@ -265,6 +278,7 @@ header {
     height: 3vh;
   }
 }
+
 .component i:active,
 .component i:hover {
   text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
