@@ -14,7 +14,7 @@ a:hover {
 }
 
 body {
-  background-color: #222222;
+  background-color: #222222 !important;
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.2), #222222),
     url(../img/background.jpg);
   background-position: center;
@@ -24,6 +24,21 @@ body {
   font-family: "Source Code Pro", monospace;
   height: 100vh;
   font-size: 12px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: rgba(85, 85, 85, 0.7);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(70, 69, 66);
+  border-radius: 12px;
+  margin: 2px 0px;
 }
 
 @media (min-width: 400px) {
@@ -281,12 +296,12 @@ figcaption {
   .contato .icons {
     grid-template-columns: repeat(4, 240px);
     height: calc(100vh -8em -48px);
-  }  
+  }
   .terminal {
     height: 47vh;
     width: 70vw;
     margin-right: auto;
-    margin-left: auto; 
+    margin-left: auto;
   }
   .component {
     height: 3vh;
@@ -305,7 +320,7 @@ figcaption {
     height: 32vh;
     width: 50vw;
     margin-right: auto;
-    margin-left: auto; 
+    margin-left: auto;
   }
   .component {
     height: 2.2vh;
