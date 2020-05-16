@@ -117,8 +117,6 @@ header {
 }
 
 .img-portfolio {
-  height: 180px;
-  width: 240px;
   object-fit: cover;
   border-radius: 2%;
 }
@@ -163,11 +161,10 @@ header {
   }
 }
 
-@media (min-width: 880px) {
-}
-
 figcaption {
+  font-size: 1.2em;
   color: whitesmoke;
+  margin-bottom: 15px;
 }
 
 .portfolio figure {
@@ -217,9 +214,48 @@ figcaption {
   height: 4vh;
 }
 
+.component i:active,
+.component i:hover {
+  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
+}
+
+.component .close {
+  margin: 4px 0px 0px 7px;
+  color: #f8585a;
+}
+
+.component .minimize {
+  color: #dec71c;
+}
+
+.component .option {
+  color: #56c432;
+}
+
+.curriculum {
+  color: #c0c0c0;
+  padding: 0px 5px 5px 5px;
+  font-size: 1.1em;
+}
+
+.curriculum p {
+  margin-top: 5px;
+}
+
+.curriculum b {
+  color: white;
+}
+
+.curriculum a b {
+  color: #678dff;
+}
+
 @media (min-width: 320px) {
+  .be-the-hero {
+    width: 240px;
+  }
   .terminal {
-    min-height: 211vh;
+    min-height: 215vh;
   }
   .component {
     height: 3.3vh;
@@ -228,7 +264,7 @@ figcaption {
 
 @media (min-width: 375px) {
   .terminal {
-    min-height: 148vh;
+    min-height: 152vh;
   }
   .component {
     height: 3vh;
@@ -237,7 +273,7 @@ figcaption {
 
 @media (min-width: 410px) {
   .terminal {
-    min-height: 98vh;
+    min-height: 103vh;
   }
   .component {
     height: 2.8vh;
@@ -246,7 +282,7 @@ figcaption {
 
 @media (min-height: 800px) {
   .terminal {
-    min-height: 120vh;
+    min-height: 125vh;
   }
   .component {
     height: 2.5vh;
@@ -255,8 +291,8 @@ figcaption {
 
 @media (min-width: 680px) {
   .terminal {
-    min-height: 38vh;
-    height: 38vh;
+    min-height: 40vh;
+    height: 40vh;
   }
   .sobre {
     height: 50vh;
@@ -269,8 +305,8 @@ figcaption {
 
 @media (min-width: 1023px) {
   .terminal {
-    min-height: 21vh;
-    height: 21vh;
+    min-height: 22vh;
+    height: 22vh;
   }
   .sobre {
     height: 30vh;
@@ -288,10 +324,6 @@ figcaption {
 @media (min-width: 1200px) {
   body {
     background-size: 100vw 100vh;
-  }
-  .img-portfolio {
-    height: 150px;
-    width: 220px;
   }
   .contato .icons {
     grid-template-columns: repeat(4, 240px);
@@ -333,36 +365,4 @@ figcaption {
     min-height: 30vh;
     height: 30vh;
   }
-}
-
-.component i:active,
-.component i:hover {
-  text-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
-}
-
-.component .close {
-  margin: 4px 0px 0px 7px;
-  color: #f8585a;
-}
-
-.component .minimize {
-  color: #dec71c;
-}
-
-.component .option {
-  color: #56c432;
-}
-
-.curriculum {
-  color: #c0c0c0;
-  padding: 0px 5px 5px 5px;
-  font-size: 1.1em;
-}
-
-.curriculum p {
-  margin-top: 5px;
-}
-
-.curriculum b {
-  color: white;
 }
